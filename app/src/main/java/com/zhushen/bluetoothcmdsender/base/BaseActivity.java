@@ -7,6 +7,7 @@ import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.zhushen.bluetoothcmdsender.bluetooth.BlueToothManager;
+import com.zhushen.bluetoothcmdsender.file.FileManager;
 
 import java.lang.reflect.Method;
 
@@ -17,6 +18,7 @@ import java.lang.reflect.Method;
 public class BaseActivity extends AppCompatActivity {
     protected BlueToothManager blueToothManager;
     protected BluetoothAdapter bluetoothAdapter;
+    protected FileManager fileManager;
 
     @Override
     public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
@@ -24,6 +26,7 @@ public class BaseActivity extends AppCompatActivity {
 
         blueToothManager = BlueToothManager.getInstance();
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        fileManager = FileManager.getInstance();
     }
 
     protected void ensureBluetoothDiscoverable() {

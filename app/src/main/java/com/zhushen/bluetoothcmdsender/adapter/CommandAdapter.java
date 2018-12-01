@@ -7,8 +7,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.medmod.simcprtest.R;
-import com.medmod.simcprtest.command.SommandEntity;
+
+import com.zhushen.bluetoothcmdsender.R;
+import com.zhushen.bluetoothcmdsender.command.SommandEntity;
 
 import java.util.ArrayList;
 import java.util.List;

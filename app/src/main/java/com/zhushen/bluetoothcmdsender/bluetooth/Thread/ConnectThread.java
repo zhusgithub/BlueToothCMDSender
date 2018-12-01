@@ -5,7 +5,8 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
-import com.medmod.simcprtest.bluetooth.utils.HexUtil;
+
+import com.zhushen.bluetoothcmdsender.bluetooth.utils.HexUtil;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -13,7 +14,8 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Locale;
 
-import static com.medmod.simcprtest.bluetooth.Constant.MessageType.MESSAGE_READ;
+import static com.zhushen.bluetoothcmdsender.bluetooth.Constant.MessageType.MESSAGE_READ;
+
 
 /**
  * Created by Zhushen on 2018/2/2.
